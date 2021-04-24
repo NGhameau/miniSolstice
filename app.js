@@ -15,7 +15,7 @@ app.set('view engine', 'ejs')
 
 
 //mongoose.connect("mongodb+srv://admin-angie:test123@cluster0.gjrjw.mongodb.net/todolistDB", {
-mongoose.connect("mongodb://admin:EFCvpa26526@node84005-todolist.hidora.com:27017/todolistDB", {
+mongoose.connect("mongodb://admin:XCPprh44742@node84003-env-8185252.hidora.com:27017/todolistDB", {
 //mongoose.connect("mongodb://mongo:27017/todolistDB", {
   useNewUrlParser: true,
   useUnifiedTopology: true
