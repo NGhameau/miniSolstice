@@ -25,6 +25,28 @@ footer hr {
   border-bottom: 5px black double;
 }
 
+
+a{
+  color: #8E8C8B;
+}
+
+/* general classes */
+.text-xs{
+  font-size: 0.5rem
+}
+.text-s{
+  font-size: 1rem;
+}
+.text-m{
+  font-size: 2rem;
+}
+
+.w-max-content{
+  width: max-content;
+}
+
+/* specific classes */
+
 .navbar img {
   max-height: 50px;
 }
@@ -63,6 +85,7 @@ object.icon {
 
 .cta button {
   margin-right: 1rem;
+  color:#8E8C8B;
 }
 
 .info {
@@ -70,6 +93,12 @@ object.icon {
   font-family: Oswald;
   letter-spacing: 0.83px;
   font-weight: 300;
+}
+
+
+
+.swimalogo{
+  width:3rem;
 }
 
 /*PROGRAM*/
