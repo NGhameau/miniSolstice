@@ -1,8 +1,4 @@
-@import url("https://fast.fonts.net/lt/1.css?apiType=css&c=7931a430-fcc7-436b-8ba7-5543eb23b645&fontids=735834");
-@font-face{
-    font-family:"Rage Italic W01";
-    src:url("Fonts/735834/61ad694c-30ec-421c-a08b-d8e714ec83b7.woff2") format("woff2"),url("Fonts/735834/545ef4b0-79ac-49bd-9582-55e682e61cf9.woff") format("woff");
-}
+
 
 body {
   background-color: #EAEAEA;
@@ -72,7 +68,7 @@ object.icon {
 }
 
 .mini {
-  font-family: rage;
+  font-family: "Rage Italic";
   font-size: 5rem;
   color: #F28C0F;
   margin-bottom: -.3em;
