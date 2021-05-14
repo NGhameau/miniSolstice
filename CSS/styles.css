@@ -68,7 +68,7 @@ object.icon {
 }
 
 .mini {
-  font-family: "Rage Italic";
+  font-family: "Rage";
   font-size: 5rem;
   color: #F28C0F;
   margin-bottom: -.3em;
@@ -158,3 +158,8 @@ footer {
     font-size: 1.5rem;
   }
 }
+
+
+/*
+        This CSS resource incorporates links to font software which is the valuable copyrighted property of Monotype and/or its suppliers. You may not attempt to copy, install, redistribute, convert, modify or reverse engineer this font software. Please contact Monotype with any questions regarding Web Fonts:  http://www.fonts.com
+        */
