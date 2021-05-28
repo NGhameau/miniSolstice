@@ -76,6 +76,7 @@ a{
   background-color: #F28C0F;
   border-color:#F28C0F;
   border-radius: 50%;
+  z-index:10;
 }
 
 .solsticebern {
