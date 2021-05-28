@@ -6,14 +6,22 @@ body {
   color: #8E8C8B;
 }
 
+
+h1, h2, h3, h4, h5{
+  font-family: "Fira Sans Condensed";
+}
 h1 {
   font-weight: 200;
   font-size: 7rem;
 }
 
 
-h1, h2, h3, h4, h5{
-  font-family: "Fira Sans Condensed";
+h3, h4 {
+  font-weight: 200;
+}
+
+h3{
+  font-size: 3rem;
 }
 
 p li {
@@ -86,6 +94,30 @@ object.icon {
 .cta button {
   margin-right: 1rem;
   color:#8E8C8B;
+}
+
+.anmeldung{
+  background-color: #F28C0F;
+  font-family: Oswald;
+  font-size: 1.2rem;
+  padding-left: 1rem;
+}
+
+
+.anmeldung.btn:not(:disabled):not(.disabled){
+    cursor: default; !important!
+}
+
+.anmeldung:active{
+  cursor: default !important!;
+}
+
+
+.anmeldung .logo{
+  filter:brightness(0.7);
+  height: 2.3rem;
+  margin-left:2rem;
+
 }
 
 .info {
