@@ -16,12 +16,13 @@
   <link rel="stylesheet" href="./CSS/styles.css" type="text/css">
 
   <script type="text/css">
-    @import url("https://fast.fonts.net/lt/1.css?apiType=css&c=7931a430-fcc7-436b-8ba7-5543eb23b645&fontids=735834");
-
-    @font-face {
-      font-family: "Rage Italic W01";
-      src: url("Fonts/735834/61ad694c-30ec-421c-a08b-d8e714ec83b7.woff2") format("woff2"), url("Fonts/735834/545ef4b0-79ac-49bd-9582-55e682e61cf9.woff") format("woff");
-    }
+      <style type="text/css">
+      @import url("https://fast.fonts.net/lt/1.css?apiType=css&c=7931a430-fcc7-436b-8ba7-5543eb23b645&fontids=735834");
+      @font-face{
+          font-family:"Rage Italic W01";
+          src:url("Fonts/735834/61ad694c-30ec-421c-a08b-d8e714ec83b7.woff2") format("woff2"),url("Fonts/735834/545ef4b0-79ac-49bd-9582-55e682e61cf9.woff") format("woff");
+      }
+    </style>
   </script>
 
 
@@ -34,9 +35,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@200;400;700;900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Palanquin:wght@100;300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
+
   <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
 
 
 
@@ -47,12 +49,45 @@
 
 
 
-  <!-- As a heading -->
-  <nav class="navbar navbar-light bg-light">
-    <img class="mb-2 logo" src="./images/logo.svg" alt="">
-    <h1 class="mb-0  text-m">Solstice Bern</span>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#"> <img class="mb-2 logo" src="./images/logo.svg" alt=""> </a>
 
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#derworkshop">Der Workshop</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#dieextras">Die Extras</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Anmeldung ab 06.06</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#staysafe">Stay Safe</a>
+        </li>
+
+      </ul>
+
+    </div>
   </nav>
+
+
+
+  <!-- Back to top button -->
+  <button
+          type="button"
+          class="btn btn-danger btn-floating btn-lg"
+          id="btn-back-to-top"
+          >
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+
 
 
 
@@ -94,8 +129,22 @@
 
 
 
-          <p class="">Wir können nicht ohne ein Solstice in diesem Jahr, trotz Corona! Wir freuen uns auf ein Solstice im Kleinformat.</p>
+          <p class="mb-5 pb-3">Wir können nicht ohne ein Solstice in diesem Jahr, trotz Corona! Wir freuen uns auf ein Solstice im Kleinformat.</p>
           <!-- <p class="lead">Mehr kommt bald!</p> -->
+
+
+         <button class="btn my-4 px-4 anmeldung ">Anmeldung ab 06.06  <img class="mb-2 logo" src="./images/logo.svg" alt=""> </button>
+
+         <div class="cta mb-5 d-md-flex justify-content-md-start">
+           <a href="https://www.solsticebern.com">
+             <button class="btn btn-lg btn-light px-4 me-md-3">Solstice Bern</button>
+           </a>
+           <a href="#" class="email">
+             <button class="btn btn-lg btn-outline-light px-4 ">Kontakt</button>
+           </a>
+
+         </div>
+
 
 
         </div>
@@ -104,7 +153,7 @@
 
           <ul class="list-unstyled">
             <li><strong>Einen ganzen Sonntag tanzen</strong>
-              <p>Fünf Stunden Solo Jazz-Klassen pro Level </p>
+              <p>4.5 Stunden Solo Jazz-Klassen pro Level </p>
             </li>
             <li><strong>Mit Angélique und Lisa</strong>
               <p>Tolle lokale Teachers mit einem persönlichen Draht</p>
@@ -120,32 +169,6 @@
           </ul>
 
         </div>
-
-
-
-
-
-
-      </div>
-
-
-
-
-      <div class="row ">
-        <div class="">
-
-
-          <div class="cta d-md-flex justify-content-md-start">
-            <a href="https://www.solsticebern.com">
-              <button class="btn btn-lg btn-light px-4 me-md-3">Solstice Bern</button>
-            </a>
-            <a href="#" class="email">
-              <button class="btn btn-lg btn-outline-light px-4 ">Contact</button>
-            </a>
-
-          </div>
-        </div>
-
       </div>
 
 
@@ -157,79 +180,9 @@
 
   <!-- SOLO JAZZ SECTION -->
 
-  <section>
-
-
-    <div class="container py-5">
-      <h3>Solo Jazz </h3>
-      <div class="row">
-
-        <div class="col-md-6">
-          <p> Authentic Jazz, oder "Solo Jazz", bezeichnet das Solo-Tanzen in der Tradition des Swing. Dieser Jazztanz führt eine spezifisch afroamerikanische Tanzform weiter. Er schöpfte aus verschiedensten Quellen: zeitgenössischen Tanzschritten
-            der 1920er bis 1940er-Jahre (Charleston, Suzie Q, Truckin') individuellen Variationen und besonderen Stilen einzelner Tänzerinnen oder Tänzer, bis hin zu Einflüssen aus ursprünglich afrikanischen Tänzen, welche sich als amerikanische
-            Kultur im Jazz wieder ausdrückten. Das Tanzen alleine oder in einem "Jam-Circle" geht auf afroamerikanische Traditionen zurück, und lebt heute im Lindy, Authentic Jazz oder dem Stepptanzen (Tap) weiter.
-          </p>
-          <p class="text-md-right">
-            <a href="https://www.swingmachinebern.ch/danceslist/index#5"> von SwingMachineBern <img class="swimalogo" src="./images/swingmachinebern.png" alt=""> </a>
-          </p>
-        </div>
-
-        <div class="col-md-6">
-
-          <div class="ml-2">
-            <div style="padding:56.25% 0 0 0;position:relative;">
-              <iframe src="https://player.vimeo.com/video/381043021?byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
-            </div>
-
-          </div>
-
-          <!-- <div class="p-3">
-            <div class="" style="padding:56.25% 0 0 0;position:relative;">
-              <iframe style="position:absolute;top:0;left:0;width:100%;height:100%;" src="https://www.youtube.com/embed/pbsaHmyKCgA" title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-          </div> -->
-
-        </div>
-
-      </div>
-
-
-      <div class="row">
-
-
-
-        <div class="col-md-6">
-
-          <!-- <div class="p-3">
-            <div style="padding:56.25% 0 0 0;position:relative;">
-              <iframe src="https://player.vimeo.com/video/381043021?byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
-            </div>
-
-          </div> -->
-        </div>
-
-        <div class="col-md-6">
-          <!-- <div class="p-3">
-            <div class="" style="padding:56.25% 0 0 0;position:relative;">
-              <iframe width="916" height="515" src="https://www.youtube.com/embed/IjBHYK2YUHQ" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-            </div> -->
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
-  </section>
-
-  <hr>
   <!-- THE WORKSHOP -->
-  <section>
-    <div class="container py-5">
+  <section >
+    <div id="derworkshop"  class="container py-5">
       <h3>Der Workshop</h3>
       <p></p>
 
@@ -255,6 +208,12 @@
                 <li>Kurs 3 - 15:30-16:45 </li>
               </ul>
             </div>
+          </div>
+
+          <div class="mt-5 pt-5">
+            <h4>Preise: 110.-/90.-</h4>
+            <button class="btn px-4 anmeldung ">Anmeldung ab 06.06  <img class="mb-2 logo" src="./images/logo.svg" alt=""> </button>
+
           </div>
 
 
@@ -287,9 +246,9 @@
 
   <hr>
   <!-- NON PARTY EVENT -->
-  <section>
-    <div class="container py-5">
-      <div class="row">
+  <section >
+    <div id="dieextras" class="container py-5">
+      <div class="row p-3">
 
 
         <h3>Die Extras <i class="far fa-grin-beam"></i></h3>
@@ -348,8 +307,8 @@
 
   <hr>
   <!-- STAY SAFE -->
-  <section>
-    <div class="container py-5">
+  <section >
+    <div id="staysafe" class="container py-5">
       <h3>Stay Safe</h3>
       <h4>Schutzkonzept Solstice Mini-edition 2021</h4>
       <span>Nach dem Konzept für Tanzschulen, erstellt durch die Tanzvereinigung Schweiz und Danse Suisse</p>
@@ -458,6 +417,34 @@
   </style>
 
 
+<script type="text/javascript">
+//Get the button
+let mybutton = document.getElementById("btn-back-to-top");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  if (
+    document.body.scrollTop > 20 ||
+    document.documentElement.scrollTop > 20
+  ) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+// When the user clicks on the button, scroll to the top of the document
+mybutton.addEventListener("click", backToTop);
+
+function backToTop() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+</script>
 
 
 
