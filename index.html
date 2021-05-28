@@ -16,12 +16,13 @@
   <link rel="stylesheet" href="./CSS/styles.css" type="text/css">
 
   <script type="text/css">
-    @import url("https://fast.fonts.net/lt/1.css?apiType=css&c=7931a430-fcc7-436b-8ba7-5543eb23b645&fontids=735834");
-
-    @font-face {
-      font-family: "Rage Italic W01";
-      src: url("Fonts/735834/61ad694c-30ec-421c-a08b-d8e714ec83b7.woff2") format("woff2"), url("Fonts/735834/545ef4b0-79ac-49bd-9582-55e682e61cf9.woff") format("woff");
-    }
+      <style type="text/css">
+      @import url("https://fast.fonts.net/lt/1.css?apiType=css&c=7931a430-fcc7-436b-8ba7-5543eb23b645&fontids=735834");
+      @font-face{
+          font-family:"Rage Italic W01";
+          src:url("Fonts/735834/61ad694c-30ec-421c-a08b-d8e714ec83b7.woff2") format("woff2"),url("Fonts/735834/545ef4b0-79ac-49bd-9582-55e682e61cf9.woff") format("woff");
+      }
+    </style>
   </script>
 
 
@@ -34,9 +35,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@200;400;700;900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Palanquin:wght@100;300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
+
   <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
 
 
 
@@ -47,12 +49,45 @@
 
 
 
-  <!-- As a heading -->
-  <nav class="navbar navbar-light bg-light">
-    <img class="mb-2 logo" src="./images/logo.svg" alt="">
-    <h1 class="mb-0  text-m">Solstice Bern</span>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#"> <img class="mb-2 logo" src="./images/logo.svg" alt=""> </a>
 
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#derworkshop">Der Workshop</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#dieextras">Die Extras</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Anmeldung ab 06.06</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#staysafe">Stay Safe</a>
+        </li>
+
+      </ul>
+
+    </div>
   </nav>
+
+
+
+  <!-- Back to top button -->
+  <button
+          type="button"
+          class="btn btn-danger btn-floating btn-lg"
+          id="btn-back-to-top"
+          >
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+
 
 
 
@@ -100,12 +135,12 @@
 
          <button class="btn my-4 px-4 anmeldung ">Anmeldung ab 06.06  <img class="mb-2 logo" src="./images/logo.svg" alt=""> </button>
 
-         <div class="cta d-md-flex justify-content-md-start">
+         <div class="cta mb-5 d-md-flex justify-content-md-start">
            <a href="https://www.solsticebern.com">
              <button class="btn btn-lg btn-light px-4 me-md-3">Solstice Bern</button>
            </a>
            <a href="#" class="email">
-             <button class="btn btn-lg btn-outline-light px-4 ">Contact</button>
+             <button class="btn btn-lg btn-outline-light px-4 ">Kontakt</button>
            </a>
 
          </div>
@@ -146,8 +181,8 @@
   <!-- SOLO JAZZ SECTION -->
 
   <!-- THE WORKSHOP -->
-  <section>
-    <div class="container py-5">
+  <section >
+    <div id="derworkshop"  class="container py-5">
       <h3>Der Workshop</h3>
       <p></p>
 
@@ -211,9 +246,9 @@
 
   <hr>
   <!-- NON PARTY EVENT -->
-  <section>
-    <div class="container py-5">
-      <div class="row">
+  <section >
+    <div id="dieextras" class="container py-5">
+      <div class="row p-3">
 
 
         <h3>Die Extras <i class="far fa-grin-beam"></i></h3>
@@ -272,8 +307,8 @@
 
   <hr>
   <!-- STAY SAFE -->
-  <section>
-    <div class="container py-5">
+  <section >
+    <div id="staysafe" class="container py-5">
       <h3>Stay Safe</h3>
       <h4>Schutzkonzept Solstice Mini-edition 2021</h4>
       <span>Nach dem Konzept für Tanzschulen, erstellt durch die Tanzvereinigung Schweiz und Danse Suisse</p>
@@ -382,6 +417,34 @@
   </style>
 
 
+<script type="text/javascript">
+//Get the button
+let mybutton = document.getElementById("btn-back-to-top");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  if (
+    document.body.scrollTop > 20 ||
+    document.documentElement.scrollTop > 20
+  ) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+// When the user clicks on the button, scroll to the top of the document
+mybutton.addEventListener("click", backToTop);
+
+function backToTop() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+</script>
 
 
 
