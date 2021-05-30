@@ -55,8 +55,28 @@ a{
 
 /* specific classes */
 
+.navbar {
+    font-family: Oswald;
+    font-size:1.2rem;
+    font-weight: 300;
+    letter-spacing: 1.2px;
+}
+
 .navbar img {
   max-height: 50px;
+  width: 100px;
+}
+
+
+#btn-back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  background-color: #F28C0F;
+  border-color:#F28C0F;
+  border-radius: 50%;
+  z-index:10;
 }
 
 .solsticebern {
@@ -76,7 +96,9 @@ object.icon {
 }
 
 .mini {
-  font-family: "Rage";
+
+  font-family: "Rage Italic W01";
+
   font-size: 5rem;
   color: #F28C0F;
   margin-bottom: -.3em;
@@ -108,13 +130,9 @@ object.icon {
     cursor: default; !important!
 }
 
-.anmeldung:active{
-  cursor: default !important!;
-}
-
 
 .anmeldung .logo{
-  filter:brightness(0.7);
+  /* filter:brightness(0.7); */
   height: 2.3rem;
   margin-left:2rem;
 
@@ -123,8 +141,8 @@ object.icon {
 .info {
   font-size: 1.7rem;
   font-family: Oswald;
-  letter-spacing: 0.83px;
-  font-weight: 300;
+  letter-spacing: 1.2px;
+  font-weight: 200;
 }
 
 
