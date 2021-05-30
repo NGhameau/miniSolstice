@@ -325,7 +325,7 @@
           <div class="col-12 col-sm my-2 d-flex justify-content-center ">
             <div class="">
               <img class="mb-2 logo" src="./images/logo.svg" alt="">
-              <p class="d-block mb-3 ">&copy; Solstice Bern 2017–2021</small>
+              <p class="d-block mb-3 ">&copy; Solstice Bern 2017–<span id="year">2021</span></small>
             </div>
           </div>
 
@@ -354,6 +354,7 @@
     const post = "gmail"
 
     $(".email").attr("href", "mailto:" + pre + "@" + post + ".com");
+    document.getElementById("year").innerHTML = new Date().getFullYear();
   </script>
 
 
