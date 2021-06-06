@@ -1,26 +1,23 @@
-
-
 body {
   background-color: #EAEAEA;
   font-family: 'Palanquin', sans-serif;
   color: #8E8C8B;
 }
 
-
-h1, h2, h3, h4, h5{
+h1, h2, h3, h4, h5 {
   font-family: "Fira Sans Condensed";
 }
+
 h1 {
   font-weight: 200;
   font-size: 7rem;
 }
 
-
 h3, h4 {
   font-weight: 200;
 }
 
-h3{
+h3 {
   font-size: 3rem;
 }
 
@@ -33,33 +30,33 @@ footer hr {
   border-bottom: 5px black double;
 }
 
-
-a{
+a {
   color: #8E8C8B;
 }
 
 /* general classes */
-.text-xs{
+.text-xs {
   font-size: 0.5rem
 }
-.text-s{
+
+.text-s {
   font-size: 1rem;
 }
-.text-m{
+
+.text-m {
   font-size: 2rem;
 }
 
-.w-max-content{
+.w-max-content {
   width: max-content;
 }
 
 /* specific classes */
-
 .navbar {
-    font-family: Oswald;
-    font-size:1.2rem;
-    font-weight: 300;
-    letter-spacing: 1.2px;
+  font-family: Oswald;
+  font-size: 1.2rem;
+  font-weight: 300;
+  letter-spacing: 1.2px;
 }
 
 .navbar img {
@@ -67,16 +64,15 @@ a{
   width: 100px;
 }
 
-
 #btn-back-to-top {
   position: fixed;
   bottom: 20px;
   right: 20px;
   display: none;
   background-color: #F28C0F;
-  border-color:#F28C0F;
+  border-color: #F28C0F;
   border-radius: 50%;
-  z-index:10;
+  z-index: 10;
 }
 
 .solsticebern {
@@ -96,9 +92,7 @@ object.icon {
 }
 
 .mini {
-
   font-family: "Rage Italic W01";
-
   font-size: 5rem;
   color: #F28C0F;
   margin-bottom: -.3em;
@@ -115,27 +109,33 @@ object.icon {
 
 .cta button {
   margin-right: 1rem;
-  color:#8E8C8B;
+  color: #8E8C8B;
 }
 
-.anmeldung{
+.anmeldung {
   background-color: #F28C0F;
   font-family: Oswald;
   font-size: 1.2rem;
   padding-left: 1rem;
 }
-
-
-.anmeldung.btn:not(:disabled):not(.disabled){
-    cursor: default; !important!
+.anmeldung a {
+  text-decoration: none;
+  color: #212529;
+}
+.anmeldung a:hover {
+  color:  #212529;
 }
 
+/*
+.anmeldung.btn:not(:disabled):not(.disabled) {
+  cursor: default;
+   !important !
+} */
 
-.anmeldung .logo{
+.anmeldung .logo {
   /* filter:brightness(0.7); */
   height: 2.3rem;
-  margin-left:2rem;
-
+  margin-left: 2rem;
 }
 
 .info {
@@ -145,16 +145,14 @@ object.icon {
   font-weight: 200;
 }
 
-
-
-.swimalogo{
-  width:3rem;
+.swimalogo {
+  width: 3rem;
 }
 
 /*PROGRAM*/
 .relaxed {
   color: #F2CF1D;
-  background-color:#8E8C8B;
+  background-color: #8E8C8B;
 }
 
 .challenging {
@@ -162,7 +160,7 @@ object.icon {
   background-color: #F2CF1D;
 }
 
-.footer_background{
+.footer_background {
   background-color: #F28C0F;
 }
 
@@ -171,13 +169,44 @@ footer .logo {
 }
 
 footer {
-  color:#F4F3F2;
+  color: #F4F3F2;
 }
 
 .social-icon {
   font-size: 2.5rem;
   color: #F4F3F2;
 }
+
+/*Lisa- IMg*/
+.child-img {
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.l-img .logo {
+  height: 2rem;
+  width: auto;
+}
+
+.l-img .figure-img {
+  /* height: 13rem; */
+  width: 100%;
+  height: auto;
+  /* width:50%; */
+}
+
+.small .l-img  {
+  height: 5rem;
+  width: auto;
+}
+
+
+.small .logo {
+  max-height: 1.5rem;
+  width: auto;
+}
+
 
 /*for medium and large screens*/
 @media screen and (min-width: 900px) {
@@ -189,7 +218,7 @@ footer {
     padding-left: 5rem;
   }
 
-  .challenging{
+  .challenging {
     margin-left: 2rem;
   }
 }
@@ -208,7 +237,6 @@ footer {
     font-size: 1.5rem;
   }
 }
-
 
 /*
         This CSS resource incorporates links to font software which is the valuable copyrighted property of Monotype and/or its suppliers. You may not attempt to copy, install, redistribute, convert, modify or reverse engineer this font software. Please contact Monotype with any questions regarding Web Fonts:  http://www.fonts.com
