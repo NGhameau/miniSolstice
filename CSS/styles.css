@@ -21,6 +21,10 @@ h3 {
   font-size: 3rem;
 }
 
+h4 {
+  font-size: 2.5rem;
+}
+
 p li {
   font-size: 1.4rem;
 }
@@ -207,6 +211,10 @@ footer {
   width: auto;
 }
 
+.link{
+  color: #F28C0F;
+  text-decoration: underline;
+}
 
 /*for medium and large screens*/
 @media screen and (min-width: 900px) {
